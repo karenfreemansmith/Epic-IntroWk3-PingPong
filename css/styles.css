@@ -1,0 +1,12 @@
+body {
+  background-color: #e4007f;
+}
+h1 {
+  background-color: #069700;
+  color: white;
+  font-size: 4em;
+  line-height: 4em;
+  text-align: center;
+  font-family: cursive;
+  border-radius: 25px;
+}
