@@ -30,6 +30,7 @@ $(document).ready(function() {
         setTimeout(playMiss, soundTimer);
       }
       soundTimer+=500;
+      $("div#critters img").show();
     });
   });
 });
