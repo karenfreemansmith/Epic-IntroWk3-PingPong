@@ -12,6 +12,21 @@ h1 {
 }
 p {
   font-weight: bolder;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #900;
+}
+
+.about p {
+  font-weight: normal;
+  font-size: 1.15em;
+  color: #006bb3;
+}
+
+.about a {
+  color: #900;
+}
+
+#pingpong {
+  margin-top: 25px;
+  text-align: center;
 }
