@@ -1,12 +1,15 @@
+//UI-front end logic
 $(document).ready(function() {
   $("form#play").submit(function(event) {
     event.preventDefault();
+    $("#pingpong").empty();
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
       $("#pingpong").append("<p>" + item + "</p>");
     });
   });
 });
 
+//Backend-business logic
 function playpong(userNumber) {
   var message=[];
   for (i=1; i<=userNumber; i++) {
