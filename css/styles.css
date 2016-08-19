@@ -41,22 +41,23 @@ div#critters {
 div#critters img {
   width: 10%;
   position: absolute;
-  top: 80px;
-  left: 280px;
-}
-
-div#critters img.go {
-  -webkit-animation-name: volley;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
+  top: 10px;
+  left: 560px;
 }
 
 /* Keyframes for animations
 ---------------------------------------------------- */
+@keyframes volley {
+  0% {  top: 10px; left: 120px; }
+  40% { top: 120px; left: 240px; width: 20%; }
+  50% { top: 80px; left: 280px; opacity: .5; }
+  75% { top: 40px; left: 400px; width: 10%; }
+  100% {  top: 10px; left: 560px; opacity: 1;}
+}
 @-webkit-keyframes volley {
   0% {  top: 10px; left: 120px; }
   40% { top: 120px; left: 240px; width: 20%; }
   50% { top: 80px; left: 280px; opacity: .5; }
   75% { top: 40px; left: 400px; width: 10%; }
-  100% {  top: 10px; left: 560px; }
+  100% {  top: 10px; left: 560px; opacity: 1;}
 }

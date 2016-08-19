@@ -18,8 +18,9 @@ $(document).ready(function() {
     event.preventDefault();
     $("#pingpong").empty();
     $("#pingpong").hide();
+    acorn.style.animation= "volley 3s linear";
+    acorn.style.webkitAnimation="volley 3s linear";
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
-      $("#pingpong").append("<p class='"+item+"'>" + item + "</p>").fadeIn(5000);
       if(item==="ping") {
         setTimeout(playPing, soundTimer);
       } else if(item==="pong") {
@@ -30,7 +31,7 @@ $(document).ready(function() {
         setTimeout(playMiss, soundTimer);
       }
       soundTimer+=500;
-      $("div#critters img").show();
+      $("#pingpong").append("<p class='"+item+"'>" + item + "</p>").fadeIn(9999);
     });
   });
 });
