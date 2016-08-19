@@ -11,15 +11,23 @@ function playPong() {
 function playVolley() {
   new Audio("img/volley.mp3").play();
 }
+function playAnimation() {
+  acorn.style.animation= "volley 3s linear";
+  acorn.style.webkitAnimation= "volley 3s linear";
+}
+function stopAnimation() {
+  acorn.style.animation= "";
+  acorn.style.webkitAnimation= "";
+}
 
 $(document).ready(function() {
   $("form#play").submit(function(event) {
     var soundTimer=0;
     event.preventDefault();
+    stopAnimation();
     $("#pingpong").empty();
     $("#pingpong").hide();
-    acorn.style.animation= "volley 3s linear";
-    acorn.style.webkitAnimation="volley 3s linear";
+    playAnimation();
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
       if(item==="ping") {
         setTimeout(playPing, soundTimer);
@@ -33,6 +41,12 @@ $(document).ready(function() {
       soundTimer+=500;
       $("#pingpong").append("<p class='"+item+"'>" + item + "</p>").fadeIn(9999);
     });
+  });
+  $("#go").click(function() {
+    playAnimation();
+  });
+  $("#stop").click(function() {
+    stopAnimation();
   });
 });
 
