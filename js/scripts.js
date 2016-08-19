@@ -24,9 +24,9 @@ $(document).ready(function() {
   $("form#play").submit(function(event) {
     var soundTimer=0;
     event.preventDefault();
-    stopAnimation();
     $("#pingpong").empty();
     $("#pingpong").hide();
+    // stopAnimation();
     playAnimation();
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
       if(item==="ping") {
