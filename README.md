@@ -30,7 +30,7 @@ __*A webpage that displays "ping" and/or "pong" for certain numbers*__
 ### Additional Features:
 * Style page with columns and "about" section
 * Add ping pong sounds for ping, pong, ping-pong, and miss
-* Add animation for each ping/pong/pingpong
+* Add animation for each submission
 
 ### Setup/Installation
 * None required, can view at https://karenfreemansmith.github.io/pingpong
