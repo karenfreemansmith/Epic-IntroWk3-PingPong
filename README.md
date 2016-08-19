@@ -27,8 +27,10 @@ __*A webpage that displays "ping" and/or "pong" for certain numbers*__
     * Example Input: 20
     * Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong,16,17,ping,19,pong]
 
-### Wish List of Additional Features:
-* Add ping pong sounds for each number shown
+### Additional Features:
+* Style page with columns and "about" section
+* Add ping pong sounds for ping, pong, ping-pong, and miss
+
 * Add animation for each ping/pong/pingpong
 * Add start/loading animation?
 

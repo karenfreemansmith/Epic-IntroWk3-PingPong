@@ -1,22 +1,39 @@
 //UI-front end logic
+function playMiss() {
+  new Audio("img/miss.mp3").play();
+}
+function playPing() {
+  new Audio("img/slam1.mp3").play();
+}
+function playPong() {
+  new Audio("img/slam2.mp3").play();
+}
+function playVolley() {
+  new Audio("img/volley.mp3").play();
+}
+
 $(document).ready(function() {
   $("form#play").submit(function(event) {
+    var soundTimer=0;
     event.preventDefault();
     $("#pingpong").empty();
+    $("#pingpong").hide();
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
+      $("#pingpong").append("<p class='"+item+"'>" + item + "</p>").fadeIn(5000);
       if(item==="ping") {
-        new Audio("img/slam1.mp3").play();
+        setTimeout(playPing, soundTimer);
       } else if(item==="pong") {
-        new Audio("img/slam2.mp3").play();
+        setTimeout(playPong, soundTimer);
       } else if(item==="ping-pong") {
-        new Audio("img/volley.mp3").play();
+        setTimeout(playVolley, soundTimer);
       } else {
-        new Audio("img/miss.mp3").play();
+        setTimeout(playMiss, soundTimer);
       }
-      $("#pingpong").append("<p>" + item + "</p>");
+      soundTimer+=500;
     });
   });
 });
+
 
 //Backend-business logic
 function playpong(userNumber) {
