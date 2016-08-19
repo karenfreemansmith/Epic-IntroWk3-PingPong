@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-compatible">
     <meta name="viewport" value="width=device-width, initial-scale=1">
     <title>Ping Pong</title>
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -12,12 +11,16 @@
     <div class="container">
       <h1>Ping Pong</h1>
       <h3>Enter a number</h3>
-      <input type="number" id="myNumber"></input>
-      <button id="play">Play Pong</button>
-      <ul id="pingpong"><ul>
+      <form id="play">
+        <div class="form-group">
+          <input type="number" id="userNumber" class="form-control"></input>
+          <button type="submit">Play Pong</button>
+        </div>
+      </form>
+      <div id="pingpong"><div>
     </div>
-  <script src="js/jquery-1.12.2.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   </body>
 </html>
