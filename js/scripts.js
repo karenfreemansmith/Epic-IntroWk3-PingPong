@@ -1,7 +1,9 @@
 //UI-front end logic
 $(document).ready(function() {
   $("form#play").submit(function(event) {
+    // var audio=[, "img/miss.mp3", "img/slam1.mp3", "img/slam2.mp3"];
     event.preventDefault();
+    new Audio("img/volley.mp3").play();
     $("#pingpong").empty();
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
       $("#pingpong").append("<p>" + item + "</p>");
