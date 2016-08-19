@@ -10,14 +10,24 @@
   <body>
     <div class="container">
       <h1>Ping Pong</h1>
-      <h3>Enter a number</h3>
-      <form id="play">
-        <div class="form-group">
-          <input type="number" id="userNumber" class="form-control"></input>
-          <button type="submit">Play Pong</button>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <h3>Enter a number</h3>
+          <form id="play">
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <input type="number" id="userNumber" class="form-control"></input>
+              </div>
+              <div class="col-sm-6">
+                <button type="submit" class="btn btn-success form-control">Play Pong</button>
+              </div>
+            </div>
+          </form>
+          <img src="img/ping-pong2.png" alt="ping-pong playing chipmunks" class="img-responsive">
         </div>
-      </form>
-      <div id="pingpong"><div>
+        <div id="pingpong" class="col-sm-3"></div>
+      </div>
     </div>
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

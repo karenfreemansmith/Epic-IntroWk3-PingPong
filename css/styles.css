@@ -10,3 +10,8 @@ h1 {
   font-family: cursive;
   border-radius: 25px;
 }
+p {
+  font-weight: bolder;
+  font-size: 1em;
+  color: #900;
+}
