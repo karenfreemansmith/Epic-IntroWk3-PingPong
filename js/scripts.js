@@ -1,11 +1,18 @@
 //UI-front end logic
 $(document).ready(function() {
   $("form#play").submit(function(event) {
-    // var audio=[, "img/miss.mp3", "img/slam1.mp3", "img/slam2.mp3"];
     event.preventDefault();
-    new Audio("img/volley.mp3").play();
     $("#pingpong").empty();
     playpong(parseInt($("#userNumber").val())).forEach(function(item) {
+      if(item==="ping") {
+        new Audio("img/slam1.mp3").play();
+      } else if(item==="pong") {
+        new Audio("img/slam2.mp3").play();
+      } else if(item==="ping-pong") {
+        new Audio("img/volley.mp3").play();
+      } else {
+        new Audio("img/miss.mp3").play();
+      }
       $("#pingpong").append("<p>" + item + "</p>");
     });
   });
