@@ -36,6 +36,11 @@ __*A webpage that displays "ping" and/or "pong" for certain numbers*__
 * None required, can view at https://karenfreemansmith.github.io/pingpong
 * To view locally, clone https://github.com/karenfreemansmith/pingpong
 
+### Known Issues
+* The animation does not replay when form is resubmitted. It has something to do with stopping the animation before replaying, but the stop function doesn't seem to be working right when it's in the submit code (investigating on another branch has shown that it will work with a separate button to stop and start animation).
+* The slow fade in makes it look like it's not working if the animation doesn't play.
+* The form will not run the submit function again until all the sounds are done playing, so entering BIG numbers may also make it appear to be broken. (But it will work once sounds are done, it's only a delay).
+
 ### Support & Contact
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
