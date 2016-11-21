@@ -32,22 +32,22 @@ __*A webpage that displays "ping" and/or "pong" for certain numbers*__
 * Add ping pong sounds for ping, pong, ping-pong, and miss
 * Add animation for each submission
 
-### Setup/Installation
-* None required, can view at https://karenfreemansmith.github.io/pingpong
-* To view locally, clone https://github.com/karenfreemansmith/pingpong
+## Technologies Used
+HTML, CSS
 
-### Known Issues
-* The animation does not replay when form is resubmitted. It has something to do with stopping the animation before replaying, but the stop function doesn't seem to be working right when it's in the submit code (investigating on another branch has shown that it will work with a separate button to stop and start animation).
-* The slow fade in makes it look like it's not working if the animation doesn't play.
-* The form will not run the submit function again until all the sounds are done playing, so entering BIG numbers may also make it appear to be broken. (But it will work once sounds are done, it's only a delay).
+## Setup/Installation
+* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
+* _OR_
+* Clone diectory 
+* Open index.html in your favorite browser
 
-### Support & Contact
-For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
-### Technologies Used
-###### HTML, CSS, Bootstrap, JavaScript, jQuery
+## Known Issues
+* None
 
-### Legal
+## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 **_Karen Freeman-Smith_**
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
